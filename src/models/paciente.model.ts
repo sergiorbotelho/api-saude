@@ -214,17 +214,17 @@ export class Paciente extends Entity {
   })
   assistive_devices_patient_life?: string;
 
-  // @property({
-  //   type: 'buffer',
-  //   required: true,
-  // })
-  // term_commitment: Buffer;
+  @property({
+    type: 'string',
+    required: true,
+  })
+  term_commitment: String;
 
-  // @property({
-  //   type: 'buffer',
-  //   required: true,
-  // })
-  // consent_form: Buffer;
+  @property({
+    type: 'string',
+    required: true,
+  })
+  consent_form: String;
 
   // Define well-known properties here
 
